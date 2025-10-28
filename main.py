@@ -5,6 +5,7 @@ def run_git_command(command):
         result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
         return result.stdout.strip()
     except:
+        print("Error")
         exit(1) 
         
 status_output = run_git_command("git status --porcelain")

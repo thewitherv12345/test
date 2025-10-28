@@ -1,1 +1,3 @@
-123123
+ M file1.txt
+A  file2.txt
+?? newfile.txt
