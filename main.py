@@ -10,7 +10,7 @@ def run_git_command(command):
         
 status_output = run_git_command("git status --porcelain")
 
-changed_files = [line for line in status_output.splitlines() if line.startswith((' M', '??', ' A'))]  # M: modified, ??/A: added/new
+changed_files = [line for line in status_output.splitlines() if line.startswith((' M', '??', ' A'))]  
 num_changed = len(changed_files)
 
 commit_message = f"{num_changed} files changed"
